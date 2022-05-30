@@ -1,0 +1,37 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+<style>
+    .mydivstyle:hover {
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+        transform: translatey(-20px);
+    }
+</style>
+
+{% block content %}
+
+<div class="container" style="margin-top:50px;">
+    <h1 class="text-center">Contact Us</h1>
+    <div class="row mt-5 text-center">
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fa fa-phone-square"> Contact</i></h4>
+        <p class="text-danger font-weight-bold mt-3"><a href="tel:+9142594405">+9142594405</a></p>
+      </div>
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fa fa-envelope"></i> Send Email</h4>
+        <p class="text-danger font-weight-bold mt-3"><a href="mailto: aydinfakhri9@gmail.com">aydinfakhri9@gmail.com</a></p>
+      </div>
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fa fa-address-card"></i> Office Address</h4>
+        <p class="text-danger font-weight-bold mt-3"><a href="https://www.google.com/maps/place/Tabriz,+East+Azerbaijan+Province,+Iran/@38.0802852,46.1536398,11z/data=!3m1!4b1!4m5!3m4!1s0x401a05175b8429e1:0x59cb1dc6f21233fb!8m2!3d38.096239!4d46.2738013">IR-Tabriz</a></p>
+      </div>
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fa fa-clock-o"></i> Office Time</h4>
+        <p class="text-primary font-weight-bold mt-3">8AM to 10PM</p>
+      </div>
+    </div>
+</div>
+
+{% endblock content %}
+{% include 'footer.html' %}
+    
